@@ -7,7 +7,19 @@ This week, I was allocated to my group and introduced to the technique of using 
 ADS2002 week 3 entry
 
 This week I did basic exploratory data analysis and an assessment on the cleanliness of the data. This involved conducting research on the variables observed in the dataset. For example, I found out what CVC, ETT and NGT described in the dataset and their implications for determining a conclusive result for the project. Since it was relatively difficult to access the data, our group’s main priority was to decide our research question. I proposed that we study casual features in the images which are outlined by the training annotations data set and determine which feature seems to result in an improper placement of each given type of catheter. I also wanted to consider the reliability and accuracy of our predictions when applied to the testing set of images. My other group member suggested a research question about using our results to help streamline the catheter placement process for medical professionals and although the purpose of this project may be to assist in the automation of identifying of misplaced catheters, I believe their suggestion is too implicative meaning that it should be a question answered during the evaluation of the results. The current state of our code only deals with the contents of the csv files as indicated below:
+
 <img width="452" alt="image" src="https://github.com/AdamChoong0095/ADS2002-33154384/assets/130020182/91e8ed09-3ee7-4ff1-a505-e2c81a813e5b">
+
 To assist with comprehending the data, I wanted to answer the following questions: How many patients were being analysed? How many images were taken of each patient? How can I best choose a visual to represent the data? I did not manage to find an adequate way to visualise the data but next week, I aim to finish this process. The main insights that I generated, however, were to do with discovering what each variable meant in the context of medicine and radiology. 
 
 Github commit link: https://github.com/louisechilds/ADS2002-Catheter/pull/7
+
+ADS2002 portfolio entry week 4
+
+This week, I reviewed the previous semester’s notebooks and devised a plan to apply K-means clustering and principal component analysis to the data set. However, I had a lot of trouble importing all the data, so I had to search up methods to import samples of data for testing.  Since only small amounts of data could be imported, in my opinion it would be better to use unsupervised methods to prevent either severe overfitting or underfitting due to the lack of data in the samples extracted. My team members and I each found a way to visualise separate parts of the dataset. The visual I produced was a stacked bar graph which had the purpose of comparing quantities of certain attributes. Perhaps, it could have benefitted from being proportional rather than counted. This is because small quantities with significant meaning will be omitted or hard to see in the stacked bar chart. 
+
+<img width="272" alt="image" src="https://github.com/AdamChoong0095/ADS2002-33154384/assets/130020182/f5cb3143-9834-4762-b782-4074e267fbb8">
+
+However, this stacked bar chart clearly shows the heavy biases that exist in our dataset and that we must balance it some way or another if we are going to use a substantial proportion of all the data. Next week, our aims are to at least read the image data, perform the above-mentioned classical machine learning techniques before configuring our convolutional neural networks (CNNs) in the coming weeks. 
+
+Git pull request link: https://github.com/louisechilds/ADS2002-Catheter/pull/9
