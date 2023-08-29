@@ -23,3 +23,17 @@ This week, I reviewed the previous semester’s notebooks and devised a plan to 
 However, this stacked bar chart clearly shows the heavy biases that exist in our dataset and that we must balance it some way or another if we are going to use a substantial proportion of all the data. Next week, our aims are to at least read the image data, perform the above-mentioned classical machine learning techniques before configuring our convolutional neural networks (CNNs) in the coming weeks. 
 
 Git pull request link: https://github.com/louisechilds/ADS2002-Catheter/pull/9
+
+ADS2002 week 5 portfolio entry
+
+During this week, the main task I managed to solve was reading the image data successfully as a sample. Other activities I engaged in were some experimentations with reducing the images unsuccessfully using PCA, although I intend to get some assistance and try again since I know it is possible to conduct PCA on image data that is in the right format. Currently, I have my image data in the format of a list of arrays which will not work during PCA so I may require to find solutions to make sure I can create an array of array representations of the data so I can start implementing PCA and K means like I wanted to last week. Other activities I engaged in with my group were supervising and advising another group member as they generated visuals for the data and conducted further EDA. Admittedly, I was a bit vague in my instructions so I could foresee some upcoming complications in next week’s studio which I intend to resolve as soon as possible. The code I generated this week to read the image data successfully is included below. I used an external library, cv2, instead of tensorflow because of its ability to rapidly read images in large quantities like I aimed to last week.
+
+<img width="452" alt="image" src="https://github.com/AdamChoong0095/ADS2002-33154384/assets/130020182/adaad653-4ebb-4acc-a717-94a0d848a97c">
+ 
+As a result, I managed to preview some images in the notebook which was quite an important milestone to me as we could begin meaningfully interacting with the dataset.
+
+<img width="452" alt="image" src="https://github.com/AdamChoong0095/ADS2002-33154384/assets/130020182/40869e0f-37f1-405b-a01d-9e3127553520">
+
+No results related insights were generated this week but perhaps after I make the data compatible to PCA for reduction purposes, I will be able to pass images through a model to generate insights.
+
+The github link for this week’s commit (no merge request this week) is: https://github.com/louisechilds/ADS2002-Catheter/commit/e5f89e43ef68cc5d6f0d0c848b590d9e19542fff 
