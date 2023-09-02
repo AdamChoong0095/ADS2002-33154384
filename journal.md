@@ -37,3 +37,23 @@ As a result, I managed to preview some images in the notebook which was quite an
 No results related insights were generated this week but perhaps after I make the data compatible to PCA for reduction purposes, I will be able to pass images through a model to generate insights.
 
 The github link for this week’s commit (no merge request this week) is: https://github.com/louisechilds/ADS2002-Catheter/commit/e5f89e43ef68cc5d6f0d0c848b590d9e19542fff 
+
+ADS2002 week 6 portfolio entry
+
+During this week, I simplified the purpose of our project, modified the data frame to suit the purposes of our research question and altered the image reading function I discovered last week to match our project’s specifications. In addition, I began researching sampling methods with image data because we needed to reduce the amount of data inputted into our models. The main issues encountered when I researched sampling methods were that our dataset was heavily biased and since I could not load the whole dataset into colab, I firstly had to manually pick images to place in an extra folder then, from that extra folder, I had to sample some images. This was due to the extremely limited RAM on colab, which particularly frustrated me, especially when I was trying to configure the image reading function as well. 
+
+With the assistance of my supervisor, I coordinated the technical aspects of the project by delegating duties to myself and another member in such a way that we could both work on different models at the same time without modifying each other’s data significantly or having to create copies of data (which would not have been possible due to RAM limitations). I also discussed the less technical aspects of the project and what they entailed with my other group members to enable them to conduct their own background research on our project. 
+
+The current state of my code for the image reading function allows for the automatic readjustment of image dimensions for compatibility purposes and the ‘wrangling’ I did allows the image data to be indirectly incorporated as a ‘feature’ variable within the main data frame. Below is the code I used to simplify our data frames to suit our research question and an example output.
+
+<img width="345" alt="image" src="https://github.com/AdamChoong0095/ADS2002-33154384/assets/130020182/d932725e-7a20-4800-8ac3-cfdfd3ddc119">
+<img width="345" alt="image" src="https://github.com/AdamChoong0095/ADS2002-33154384/assets/130020182/6b9316a5-e539-4008-a02e-7873088cda05">
+
+Note how we have partitioned the data to only include NGT related outcomes. I also made sure that we were not performing modelling on incomplete images by removing the corresponding StudyInstanceUID rows. Lastly, I ensured that all these rows were only pertaining to instances where NGT catheters were actually placed, meaning for all rows, there is at least a 1 in either abnormal, normal or borderline categories. I repeated this procedure for the other two catheters. 
+
+To get an image to be represented indirectly on the data frame, I created a function outlined here.
+
+<img width="452" alt="image" src="https://github.com/AdamChoong0095/ADS2002-33154384/assets/130020182/4e8b2bfd-a4ff-4535-afb9-982a812e9a8d">
+
+The result is a data frame with each row containing the directory path of the image corresponding to the row’s study instance UID. No contributing figures were produced this week but a lot of useful pre-processing work was done. For this week, the most useful insight was related to how I managed to solve the issue of including a representation of the image data compactly in the existing data frame. I was also told to simplify my group’s problem type from a multiclassification to a binary classification which made managing many aspects of the project a lot easier. 
+
