@@ -57,3 +57,4 @@ To get an image to be represented indirectly on the data frame, I created a func
 
 The result is a data frame with each row containing the directory path of the image corresponding to the row’s study instance UID. No contributing figures were produced this week but a lot of useful pre-processing work was done. For this week, the most useful insight was related to how I managed to solve the issue of including a representation of the image data compactly in the existing data frame. I was also told to simplify my group’s problem type from a multiclassification to a binary classification which made managing many aspects of the project a lot easier. 
 
+This week’s github commit link is: https://github.com/louisechilds/ADS2002-Catheter/commit/15787234e9e4f8f14c79a2fa72f9e472f928a6da
